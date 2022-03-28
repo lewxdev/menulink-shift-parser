@@ -16,8 +16,8 @@ The following is an as-is command-line utility built with python for parsing sch
 3. Prepend commands with `pipenv run python main.py`
 
 ### Arguments ###
-* `date` – the date identifier of the schedule file, conventionally formatted as "%Y-%m-%d"
-* `employee` - the name of the employee to retrieve shifts for. Can be formatted as "last, first" (as it appears) or "first last"
+* `DATE` – the date identifier of the schedule file, conventionally formatted as "%Y-%m-%d"
+* `EMPLOYEE` - the name of the employee to retrieve shifts for. Can be formatted as "last, first" (as it appears) or "first last"
 
 ## Caveats ##
 As implemented, the `area` argument of `tabula.read_pdf()` is required for the schedule to be parsed correctly, and the exact column positions may not be consistent in all use cases. A potential solution is to [determine these positions](https://tabula-py.readthedocs.io/en/latest/faq.html#how-to-use-area-option) before using the utility (though this may not be consistent weekly if the employee roster changes in a way that moves the first column position significantly). Alternatively, a method could be implemented that determines the first column position at runtime and the other positions are generated programmatically based on the page margins (given equidistance).

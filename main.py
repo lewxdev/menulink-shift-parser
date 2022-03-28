@@ -12,3 +12,12 @@ __author__ = "J. Lewis @lewxdev"
 __copyright__ = "Copyright 2022, J. Lewis"
 __license__ = "GPLv3.0"
 __version__ = "0.1.0"
+
+
+def main():
+    """The entry point of the utility"""
+    pass
+
+
+if __name__ == "__main__":
+    main()
