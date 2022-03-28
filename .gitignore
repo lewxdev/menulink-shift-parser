@@ -1,0 +1,7 @@
+# Learn more: https://git-scm.com/docs/gitignore
+
+__pycache__/
+.vscode/
+schedules/*.pdf
+.env
+.DS_Store
